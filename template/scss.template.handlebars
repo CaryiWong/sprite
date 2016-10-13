@@ -1,0 +1,31 @@
+{{#block "spritesheet"}}
+    @function sprityPercent($a, $b){
+    @if $b == 0 {
+    @return 0%;
+    } @else {
+    @return percentage($a / $b);
+    }
+    }
+
+    $sprity_width: {{spritesheet.px.width}};
+    $sprity_height: {{spritesheet.px.height}};
+
+
+    *[class^="icons-"] {
+    background-image: url('../images/{{spritesheet.escaped_image}}');
+    display: inline-block;
+    }
+    {{#sprites}}
+        {{sprites}}
+        .{{name}}{
+        background-position: sprityPercent(abs({{px.offset_x}}), ($sprity_width - {{px.width}})) sprityPercent(abs({{px.offset_y}}), ($sprity_height - {{px.height}}));
+        width: {{px.width}};
+        height: {{px.height}};
+        background-size: percentage($sprity_width / {{px.width}}) percentage($sprity_height / {{px.height}});
+        }
+    {{/sprites}}
+{{/block}}
+
+
+
+

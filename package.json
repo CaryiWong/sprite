@@ -1,0 +1,26 @@
+{
+  "name": "sprite",
+  "version": "",
+  "description": "An example for sprite",
+  "main": "",
+  "typings": "",
+  "files": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaryiWong/sprite.git"
+  },
+  "author": "Caryi",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.1",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp.spritesmith": "^6.2.1"
+  }
+}
