@@ -1,0 +1,76 @@
+    @function sprityPercent($a, $b){
+    @if $b == 0 {
+    @return 0%;
+    } @else {
+    @return percentage($a / $b);
+    }
+    }
+
+    $sprity_width: 146px;
+    $sprity_height: 108px;
+
+
+    *[class^="icons-"] {
+    background-image: url('../images/sprite.png');
+    display: inline-block;
+    }
+        
+        .icons-icon_card{
+        background-position: sprityPercent(abs(-80px), ($sprity_width - 28px)) sprityPercent(abs(-38px), ($sprity_height - 28px));
+        width: 28px;
+        height: 28px;
+        background-size: percentage($sprity_width / 28px) percentage($sprity_height / 28px);
+        }
+        
+        .icons-icon_comment{
+        background-position: sprityPercent(abs(0px), ($sprity_width - 28px)) sprityPercent(abs(-80px), ($sprity_height - 28px));
+        width: 28px;
+        height: 28px;
+        background-size: percentage($sprity_width / 28px) percentage($sprity_height / 28px);
+        }
+        
+        .icons-icon_delete{
+        background-position: sprityPercent(abs(-80px), ($sprity_width - 30px)) sprityPercent(abs(0px), ($sprity_height - 30px));
+        width: 30px;
+        height: 30px;
+        background-size: percentage($sprity_width / 30px) percentage($sprity_height / 30px);
+        }
+        
+        .icons-icon_location{
+        background-position: sprityPercent(abs(-36px), ($sprity_width - 28px)) sprityPercent(abs(-80px), ($sprity_height - 28px));
+        width: 28px;
+        height: 28px;
+        background-size: percentage($sprity_width / 28px) percentage($sprity_height / 28px);
+        }
+        
+        .icons-icon_more{
+        background-position: sprityPercent(abs(0px), ($sprity_width - 72px)) sprityPercent(abs(0px), ($sprity_height - 72px));
+        width: 72px;
+        height: 72px;
+        background-size: percentage($sprity_width / 72px) percentage($sprity_height / 72px);
+        }
+        
+        .icons-icon_online{
+        background-position: sprityPercent(abs(-72px), ($sprity_width - 28px)) sprityPercent(abs(-80px), ($sprity_height - 28px));
+        width: 28px;
+        height: 28px;
+        background-size: percentage($sprity_width / 28px) percentage($sprity_height / 28px);
+        }
+        
+        .icons-icon_people{
+        background-position: sprityPercent(abs(-118px), ($sprity_width - 28px)) sprityPercent(abs(0px), ($sprity_height - 28px));
+        width: 28px;
+        height: 28px;
+        background-size: percentage($sprity_width / 28px) percentage($sprity_height / 28px);
+        }
+        
+        .icons-icon_people_gray{
+        background-position: sprityPercent(abs(-118px), ($sprity_width - 28px)) sprityPercent(abs(-36px), ($sprity_height - 28px));
+        width: 28px;
+        height: 28px;
+        background-size: percentage($sprity_width / 28px) percentage($sprity_height / 28px);
+        }
+
+
+
+
